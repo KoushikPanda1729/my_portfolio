@@ -1,0 +1,21 @@
+.experience-accord {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+.experience-cards-div {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+@media (max-width: 768px) {
+  .experience-accord {
+    padding: 0 16px 40px;
+  }
+
+  .experience-cards-div {
+    gap: 60px;
+  }
+}

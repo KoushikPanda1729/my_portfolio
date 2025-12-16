@@ -1,0 +1,199 @@
+/* Degree Card Link */
+.degree-card-link {
+  display: block;
+  cursor: pointer;
+}
+
+/* Modern Degree Card - Matching Experience Card Style */
+.degree-card-modern {
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.degree-card-modern:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Header Section */
+.degree-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.degree-logo-wrapper {
+  flex-shrink: 0;
+}
+
+.degree-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: contain;
+  background: #fff;
+  padding: 4px;
+}
+
+.degree-header-content {
+  flex: 1;
+}
+
+.degree-program-title {
+  font-family: "Google Sans Bold";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 0 10px 0;
+}
+
+.degree-institution-name {
+  font-family: "Google Sans Regular";
+  font-size: 28px;
+  font-weight: 400;
+}
+
+/* Meta Information */
+.degree-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.degree-meta-item {
+  display: flex;
+  align-items: center;
+  font-family: "Google Sans Regular";
+  font-size: 15px;
+}
+
+/* Description */
+.degree-description {
+  margin-bottom: 20px;
+}
+
+.degree-description p {
+  font-family: "Google Sans Regular";
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0 0 12px 0;
+}
+
+.degree-description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Skills/Subjects */
+.degree-skills {
+  margin-bottom: 20px;
+  font-family: "Google Sans Regular";
+  font-size: 15px;
+  line-height: 1.8;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-separator {
+  margin: 0 4px;
+}
+
+/* Achievements */
+.degree-achievements {
+  margin-top: 20px;
+}
+
+.degree-achievements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Google Sans Regular";
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.degree-achievements ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
+
+.degree-achievements ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .degree-card-modern {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+  }
+
+  .degree-card-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .degree-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .degree-program-title {
+    font-size: 24px;
+  }
+
+  .degree-institution-name {
+    font-size: 24px;
+  }
+
+  .degree-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .degree-meta-item {
+    font-size: 14px;
+  }
+
+  .degree-description p {
+    font-size: 15px;
+  }
+
+  .degree-skills {
+    font-size: 14px;
+  }
+
+  .degree-achievements ul {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .degree-program-title {
+    font-size: 20px;
+  }
+
+  .degree-institution-name {
+    font-size: 20px;
+  }
+
+  .degree-description p {
+    font-size: 14px;
+  }
+
+  .degree-skills {
+    font-size: 13px;
+  }
+
+  .degree-achievements ul {
+    font-size: 13px;
+  }
+}

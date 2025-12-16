@@ -1,0 +1,150 @@
+/* Education Accordion Container */
+.education-accord {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+/* Education Cards Container */
+.education-cards-div {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* Competitive Section at Bottom */
+.competitive-section {
+  max-width: 1200px;
+  margin: 80px auto 40px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.competitive-header {
+  font-size: 32px;
+  font-family: "Google Sans Bold";
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.competitive-sites-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.competitive-site-card {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  min-width: 200px;
+  max-width: 250px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.competitive-site-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.competitive-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.competitive-site-card:hover .competitive-icon-wrapper {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.competitive-site-name {
+  font-family: "Google Sans Bold";
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.competitive-visit-text {
+  font-family: "Google Sans Medium";
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.competitive-site-card:hover .competitive-visit-text {
+  transform: translateX(4px);
+}
+
+/* Responsive Design */
+@media (max-width: 1380px) {
+  .competitive-header {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-accord {
+    padding: 0 16px 40px;
+  }
+
+  .education-cards-div {
+    gap: 60px;
+  }
+
+  .competitive-section {
+    margin: 60px auto 30px;
+    padding: 0 16px;
+  }
+
+  .competitive-header {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .competitive-sites-wrapper {
+    gap: 20px;
+  }
+
+  .competitive-site-card {
+    padding: 24px;
+    min-width: 160px;
+    max-width: 180px;
+  }
+
+  .competitive-icon-wrapper {
+    width: 64px;
+    height: 64px;
+  }
+
+  .competitive-icon-wrapper i {
+    font-size: 36px !important;
+  }
+
+  .competitive-site-name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .competitive-site-card {
+    min-width: 140px;
+    max-width: 160px;
+    padding: 20px;
+  }
+
+  .competitive-site-name {
+    font-size: 16px;
+  }
+}
