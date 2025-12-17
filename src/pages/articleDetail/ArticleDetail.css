@@ -6,9 +6,9 @@
 }
 
 .article-detail-container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 5% 80px;
+  padding: 60px 20px 80px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -141,9 +141,9 @@
 }
 
 .article-not-found {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 5%;
+  padding: 100px 20px;
   text-align: center;
 }
 
@@ -162,7 +162,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .article-detail-container {
-    padding: 40px 5% 60px;
+    padding: 40px 20px 60px;
   }
 
   .back-to-articles {
