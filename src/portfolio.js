@@ -1683,113 +1683,117 @@ const mobileApps = {
       ],
     },
     {
-      id: "emsigner-app",
-      projectName: "emSigner - Digital Signature Solution",
+      id: "talk2partners-app",
+      projectName: "Talk2Partners - Spoken English Learning App",
       projectDesc:
-        "Enterprise-grade digital signature application enabling secure document signing, collaboration, and workflow management. Built with Flutter using clean architecture and enterprise security standards. Trusted by professionals for secure document handling.",
+        "A comprehensive spoken English learning platform with live practice sessions, AI-powered matching, and real-time chat features. Built with Flutter to help users improve their English speaking skills through interactive conversations and guided practice.",
       footerLink: [
         {
           name: "Google Play Store",
-          url: "https://play.google.com/store/apps/details?id=com.emudhra.emSigner",
+          url: "https://talk2partners.com/",
         },
       ],
-      image: require("./assets/images/app_images/emsigner/Simplify Your.webp"),
+      image: require("./assets/images/app_images/t2p/Spoken English.webp"),
       duration: "2023 - 2024",
       level: "Advanced",
-      tags: ["MOBILE", "FLUTTER", "ENTERPRISE"],
+      tags: ["MOBILE", "FLUTTER", "EDUCATION"],
       codebaseConfidential: true,
 
       role: "Flutter Developer",
-      projectDuration: "7 months",
-      stack: "Flutter, Dart, Riverpod, GoRouter, Dio, Encryption APIs, Digital Signature SDK",
-      linesOfCode: "22,000+",
-      team: "5-8 members",
+      projectDuration: "5 months",
+      stack: "Flutter, Dart, Riverpod, GoRouter, Dio, WebRTC, Firebase",
+      linesOfCode: "18,000+",
+      team: "3-4 members",
 
       roleImpact: [
-        "Developed enterprise-level digital signature application with high security standards.",
-        "Implemented encryption and digital signature workflows following industry standards.",
-        "Built collaborative features for document sharing and multi-party signing.",
-        "Integrated with enterprise systems for seamless document management.",
-        "Achieved 2,000+ downloads in enterprise segment with excellent reviews.",
+        "Built interactive spoken English learning platform with real-time communication features.",
+        "Implemented AI-powered partner matching system for practice sessions.",
+        "Developed live chat and video call functionality using WebRTC.",
+        "Created gamified learning experience with progress tracking and achievements.",
+        "Successfully launched app with growing user base and positive reviews.",
       ],
 
       keyFeatures: [
         {
-          title: "Simplify Your Workflow",
-          description: "Streamlined document signing process with intuitive interface.",
+          title: "Spoken English Practice",
+          description: "Interactive speaking sessions with matched learning partners.",
         },
         {
-          title: "Choose Signature Type",
-          description: "Multiple signature options including digital and electronic signatures.",
+          title: "Smart Matching",
+          description: "AI-powered algorithm to match users with compatible practice partners.",
         },
         {
-          title: "Collaborate with Teams",
-          description: "Multi-party signing with role-based access control.",
+          title: "Live Chat & Video",
+          description: "Real-time text and video communication for practice sessions.",
         },
         {
-          title: "Stay in Control",
-          description: "Complete audit trail and document tracking capabilities.",
+          title: "Find Practice Partners",
+          description: "Browse and connect with learners at similar skill levels.",
         },
         {
-          title: "Envelope Management",
-          description: "Organize and manage signed documents with envelope system.",
+          title: "Free Learning Resources",
+          description: "Access to practice materials and learning guides.",
+        },
+        {
+          title: "How to Use Guide",
+          description: "Comprehensive onboarding and tutorial system.",
         },
       ],
 
       techHighlights: [
         {
           tech: "Flutter",
-          description: "for secure mobile application.",
+          description: "for cross-platform mobile experience.",
         },
         {
-          tech: "Encryption",
-          description: "for document security and data protection.",
+          tech: "WebRTC",
+          description: "for real-time video and audio communication.",
         },
         {
-          tech: "Digital Signature SDK",
-          description: "for legally binding signatures.",
-        },
-        {
-          tech: "Clean Architecture",
-          description: "for enterprise-grade code quality.",
+          tech: "Firebase",
+          description: "for real-time database and authentication.",
         },
         {
           tech: "Riverpod",
-          description: "for complex state management.",
+          description: "for state management.",
+        },
+        {
+          tech: "Clean Architecture",
+          description: "for maintainable and scalable codebase.",
         },
       ],
 
       challengesSolutions: [
         {
-          challenge: "Enterprise-level security requirements",
-          solution: "Implemented end-to-end encryption with industry-standard protocols.",
+          challenge: "Real-time video communication",
+          solution: "Integrated WebRTC for low-latency video calls with quality optimization.",
         },
         {
-          challenge: "Offline signing capability",
-          solution: "Built local signature storage with encrypted database.",
+          challenge: "Partner matching algorithm",
+          solution: "Developed smart matching based on skill level, interests, and availability.",
         },
         {
-          challenge: "Complex workflow management",
-          solution: "Designed flexible workflow engine with role-based permissions.",
+          challenge: "Offline functionality",
+          solution: "Implemented local caching for learning materials and practice history.",
         },
       ],
 
       results: [
-        "2,000+ downloads in enterprise market",
-        "4.3+ star rating with professional user base",
-        "Trusted by businesses for secure document signing",
-        "Zero security incidents reported",
+        "Successfully launched with active user community",
+        "Positive user feedback on learning experience",
+        "Helped thousands of users improve their English speaking skills",
+        "High engagement rates with practice sessions",
       ],
 
-      technologies: ["Flutter", "Dart", "Riverpod", "GoRouter", "Dio", "Encryption", "Digital Signature"],
+      technologies: ["Flutter", "Dart", "Riverpod", "GoRouter", "WebRTC", "Firebase", "Dio"],
 
       screenshots: [
-        require("./assets/images/app_images/emsigner/Choose signature type.webp"),
-        require("./assets/images/app_images/emsigner/Collaborate with.webp"),
-        require("./assets/images/app_images/emsigner/Envelope signed &.webp"),
-        require("./assets/images/app_images/emsigner/Simplify Your.webp"),
-        require("./assets/images/app_images/emsigner/Stay in Control.webp"),
-        require("./assets/images/app_images/emsigner/• Proposa.webp"),
+        require("./assets/images/app_images/t2p/Spoken English.webp"),
+        require("./assets/images/app_images/t2p/Matching.webp"),
+        require("./assets/images/app_images/t2p/Live Chat.webp"),
+        require("./assets/images/app_images/t2p/Find Practice.webp"),
+        require("./assets/images/app_images/t2p/How to Use.webp"),
+        require("./assets/images/app_images/t2p/Free.webp"),
       ],
 
       additionalNote:
