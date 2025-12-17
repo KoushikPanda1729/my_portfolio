@@ -9,6 +9,83 @@
   margin-bottom: 10px;
 }
 
+/* Social icon wrapper for hover effect */
+.social-icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Social hover image */
+.social-hover-image {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.social-hover-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  border: 3px solid #fff;
+}
+
+.social-icon-wrapper:hover .social-hover-image {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(10px);
+}
+
+/* Email hover display */
+.social-hover-email {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  z-index: 1000;
+  background: #ffffff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+
+.social-hover-email .email-text {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.social-icon-wrapper:hover .social-hover-email {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(10px);
+}
+
+.social-hover-email::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #ffffff;
+}
+
 .icon-button i {
   border-radius: 2.6rem;
   cursor: pointer;
@@ -66,5 +143,27 @@
 @media (max-width: 768px) {
   .social-media-div {
     text-align: center;
+  }
+
+  .social-hover-image img {
+    width: 200px;
+  }
+
+  .social-hover-image {
+    top: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-hover-image img {
+    width: 150px;
+  }
+
+  .social-hover-email .email-text {
+    font-size: 12px;
+  }
+
+  .social-hover-email {
+    padding: 10px 16px;
   }
 }

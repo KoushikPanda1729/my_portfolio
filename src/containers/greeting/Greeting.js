@@ -5,6 +5,7 @@ import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
+import { Link } from "react-router-dom";
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -70,13 +71,15 @@ export default function Greeting(props) {
               </p>
               <SocialMedia theme={theme} />
               <div className="portfolio-repo-btn-div">
-                <Button
-                  text="See My Resume"
-                  newTab={true}
-                  href={greeting.resumeLink}
-                  theme={theme}
-                  className="portfolio-repo-btn"
-                />
+                <Link
+                  to="/resume"
+                  className="preview-resume-btn"
+                >
+                  <i className="fas fa-eye"></i> Preview Resume
+                  <div className="resume-hover-preview">
+                    <span>👁️ View full resume page</span>
+                  </div>
+                </Link>
               </div>
               {/* <div className="button-greeting-div">
               <Button text="Contact me" href="#contact" />

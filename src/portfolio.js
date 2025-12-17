@@ -25,7 +25,7 @@ const greeting = {
   designation: "Software Engineer at Evtaar",
   subTitle:
     "A passionate Full Stack Developer who loves building scalable web applications and solving complex problems with elegant solutions.",
-  resumeLink: "https://drive.google.com/file/d/YOUR_RESUME_ID/view?usp=sharing", // Update with your resume link
+  resumeLink: "/my_resume.pdf", // Local resume file
   portfolio_repository: "https://github.com/KoushikPanda1729/masterPortfolio",
   githubProfile: "https://github.com/KoushikPanda1729",
 };

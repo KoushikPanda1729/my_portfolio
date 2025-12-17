@@ -180,6 +180,108 @@
   height: auto;
 }
 
+
+/* Preview resume button */
+.preview-resume-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: transparent;
+  color: #667eea;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: "Google Sans Medium";
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.preview-resume-btn:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.preview-resume-btn i {
+  font-size: 14px;
+}
+
+/* Download resume button */
+.download-resume-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: transparent;
+  color: #667eea;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: "Google Sans Medium";
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.download-resume-btn:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.download-resume-btn i {
+  font-size: 14px;
+}
+
+/* Resume hover preview */
+.resume-hover-preview {
+  position: absolute;
+  top: calc(100% + 15px);
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  z-index: 1000;
+  background: #ffffff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+
+.resume-hover-preview span {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.download-resume-btn:hover .resume-hover-preview {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(5px);
+}
+
+.resume-hover-preview::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #ffffff;
+}
+
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
@@ -279,6 +381,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+
+  .preview-resume-btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 15px;
+    padding: 12px 20px;
   }
 
   .greeting-image-div {
