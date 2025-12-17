@@ -25,7 +25,9 @@ class Header extends Component {
         <label className="menu-backdrop" htmlFor="menu-btn"></label>
         <Fade top duration={1000} distance="20px">
           <SeoHeader />
-          <div>
+        </Fade>
+        <div className="header-container">
+          <div className="header-wrapper">
             <header className="header">
               <NavLink to={link} tag={Link} className="logo">
                 <span style={{ color: theme.text }}> &lt;</span>
@@ -37,7 +39,10 @@ class Header extends Component {
               <label className="menu-icon" htmlFor="menu-btn">
                 <span className="navicon"></span>
               </label>
-              <ul className="menu" style={{ backgroundColor: theme.body }}>
+            </header>
+          </div>
+          <div className="menu-wrapper">
+            <ul className="menu" style={{ backgroundColor: theme.body }}>
               <li className="menu-close">
                 <label htmlFor="menu-btn" style={{ cursor: 'pointer', fontSize: '30px', padding: '20px', display: 'block', textAlign: 'right', color: theme.text }}>
                   &times;
@@ -115,10 +120,9 @@ class Header extends Component {
                   Article
                 </NavLink>
               </li>
-            </ul>
-            </header>
+          </ul>
           </div>
-        </Fade>
+        </div>
       </>
     );
   }

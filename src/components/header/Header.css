@@ -1,15 +1,28 @@
 /* header */
 
+.header-container {
+  max-width: 1200px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  position: relative !important;
+}
+
+.header-wrapper {
+  width: 100% !important;
+}
+
 .header {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  max-width: 1200px !important;
   width: 100% !important;
   padding: 20px !important;
-  margin: 0 auto !important;
   flex-wrap: nowrap !important;
   box-sizing: border-box !important;
+}
+
+.menu-wrapper {
+  width: 100% !important;
 }
 
 .header ul {
@@ -132,7 +145,7 @@
   cursor: pointer;
 }
 
-#menu-btn:checked ~ .menu {
+#menu-btn:checked ~ * .menu {
   right: 0;
 }
 
@@ -145,21 +158,9 @@
   user-select: none;
 }
 
-#menu-btn:checked ~ * .menu-icon .navicon,
-body:has(#menu-btn:checked) .menu-icon .navicon {
-  background: transparent;
-}
-
-#menu-btn:checked ~ * .menu-icon .navicon:before,
-body:has(#menu-btn:checked) .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-  top: 0;
-}
-
-#menu-btn:checked ~ * .menu-icon .navicon:after,
-body:has(#menu-btn:checked) .menu-icon .navicon:after {
-  transform: rotate(45deg);
-  top: 0;
+#menu-btn:checked ~ * .menu-icon {
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* 48em = 768px */
@@ -177,26 +178,35 @@ body:has(#menu-btn:checked) .menu-icon .navicon:after {
     display: none !important;
   }
 
-  .header .menu {
+  .menu-wrapper {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+
+  .menu {
     display: flex !important;
     flex-direction: row !important;
     position: static !important;
     width: auto !important;
     height: auto !important;
-    padding: 0 !important;
+    padding: 20px !important;
     margin: 0 !important;
     background: transparent !important;
     overflow: visible !important;
   }
 
-  .header .menu li {
+  .menu li {
     list-style: none !important;
     width: auto !important;
     padding: 0 !important;
     margin: 0 !important;
   }
 
-  .header .menu li a {
+  .menu li a {
     padding: 20px !important;
     text-decoration: none !important;
     border-bottom: none !important;
