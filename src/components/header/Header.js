@@ -21,6 +21,8 @@ class Header extends Component {
     const link = settings.isSplash ? "/splash" : "home";
     return (
       <>
+        <input className="menu-btn" type="checkbox" id="menu-btn" />
+        <label className="menu-backdrop" htmlFor="menu-btn"></label>
         <Fade top duration={1000} distance="20px">
           <SeoHeader />
           <div>
@@ -35,12 +37,7 @@ class Header extends Component {
               <label className="menu-icon" htmlFor="menu-btn">
                 <span className="navicon"></span>
               </label>
-            </header>
-          </div>
-        </Fade>
-        <input className="menu-btn" type="checkbox" id="menu-btn" />
-        <label className="menu-backdrop" htmlFor="menu-btn"></label>
-        <ul className="menu" style={{ backgroundColor: theme.body }}>
+              <ul className="menu" style={{ backgroundColor: theme.body }}>
               <li className="menu-close">
                 <label htmlFor="menu-btn" style={{ cursor: 'pointer', fontSize: '30px', padding: '20px', display: 'block', textAlign: 'right', color: theme.text }}>
                   &times;
@@ -119,6 +116,9 @@ class Header extends Component {
                 </NavLink>
               </li>
             </ul>
+            </header>
+          </div>
+        </Fade>
       </>
     );
   }

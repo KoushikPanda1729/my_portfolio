@@ -96,7 +96,7 @@
 
 @media (max-width: 768px) {
   .education-accord {
-    padding: 0 16px 40px;
+    padding: 0 20px 40px;
   }
 
   .education-cards-div {
@@ -105,7 +105,7 @@
 
   .competitive-section {
     margin: 60px auto 30px;
-    padding: 0 16px;
+    padding: 0 20px;
   }
 
   .competitive-header {
