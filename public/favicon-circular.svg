@@ -1,0 +1,19 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="256" cy="256" r="240"/>
+    </clipPath>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <image
+    href="my_image.png"
+    x="16"
+    y="16"
+    width="480"
+    height="480"
+    clip-path="url(#circleClip)"
+    filter="url(#shadow)"
+  />
+</svg>
