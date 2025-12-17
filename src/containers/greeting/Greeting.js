@@ -5,7 +5,6 @@ import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
-import { Link } from "react-router-dom";
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -50,7 +49,7 @@ export default function Greeting(props) {
                           className="linkedin-duration"
                           style={{ color: theme.secondaryText }}
                         >
-                          Dec 2025 - Present · 1 mo
+                          Dec 2025 - Present 
                         </p>
                         <p
                           className="linkedin-location"
@@ -71,15 +70,20 @@ export default function Greeting(props) {
               </p>
               <SocialMedia theme={theme} />
               <div className="portfolio-repo-btn-div">
-                <Link
-                  to="/resume"
+                <a
+                  href={greeting.resumeLink}
+                  download="Koushik_Panda_Resume.pdf"
                   className="preview-resume-btn"
                 >
-                  <i className="fas fa-eye"></i> Preview Resume
-                  <div className="resume-hover-preview">
-                    <span>👁️ View full resume page</span>
+                  <i className="fas fa-download"></i> Download Resume
+                  <div className="resume-hover-preview-card">
+                    <iframe
+                      src={`${greeting.resumeLink}#toolbar=0&navpanes=0&scrollbar=0`}
+                      title="Resume Preview"
+                      className="resume-preview-iframe"
+                    />
                   </div>
-                </Link>
+                </a>
               </div>
               {/* <div className="button-greeting-div">
               <Button text="Contact me" href="#contact" />

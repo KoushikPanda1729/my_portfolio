@@ -201,9 +201,10 @@
 }
 
 .preview-resume-btn:hover {
-  background: #667eea;
-  color: white;
-  transform: translateY(-2px);
+  background: rgba(102, 126, 234, 0.08);
+  border-color: #7c8ef5;
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
 }
 
 .preview-resume-btn i {
@@ -239,47 +240,49 @@
   font-size: 14px;
 }
 
-/* Resume hover preview */
-.resume-hover-preview {
+/* Resume hover preview card */
+.resume-hover-preview-card {
   position: absolute;
-  top: calc(100% + 15px);
+  bottom: calc(100% + 20px);
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(10px);
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
   pointer-events: none;
-  z-index: 1000;
+  z-index: 9999;
   background: #ffffff;
-  padding: 10px 18px;
-  border-radius: 8px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-  white-space: nowrap;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  height: 500px;
+  max-width: 90vw;
+  overflow: hidden;
 }
 
-.resume-hover-preview span {
-  color: #000000;
-  font-size: 14px;
-  font-weight: 600;
+.resume-preview-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
-.download-resume-btn:hover .resume-hover-preview {
+.preview-resume-btn:hover .resume-hover-preview-card {
   opacity: 1;
   visibility: visible;
-  transform: translateX(-50%) translateY(5px);
+  transform: translateX(-50%) translateY(0);
 }
 
-.resume-hover-preview::before {
+.resume-hover-preview-card::after {
   content: '';
   position: absolute;
-  top: -8px;
+  bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
   width: 0;
   height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 8px solid #ffffff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ffffff;
 }
 
 /* Media Query */
@@ -388,6 +391,24 @@
     justify-content: center;
     font-size: 15px;
     padding: 12px 20px;
+  }
+
+  .resume-hover-preview-card {
+    width: 350px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-hover-preview-card {
+    width: 90vw;
+    height: 400px;
+    left: 5vw;
+    transform: translateX(0) translateY(10px);
+  }
+
+  .preview-resume-btn:hover .resume-hover-preview-card {
+    transform: translateX(0) translateY(0);
   }
 
   .greeting-image-div {
