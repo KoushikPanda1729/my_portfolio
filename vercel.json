@@ -21,6 +21,10 @@
       "dest": "/icons/$1"
     },
     {
+      "src": "/my_resume.pdf",
+      "dest": "/my_resume.pdf"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
